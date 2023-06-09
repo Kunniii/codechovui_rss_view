@@ -6,7 +6,7 @@ export default function App() {
   const [posts, setPosts] = useState([]);
   const [rawRSS, setRawRSS] = useState("");
   useEffect(() => {
-    fetch("https://codechovui.dev/index.xml")
+    fetch("http://codechovui.dev/index.xml")
       .then((response) => response.text())
       .then((rawRSS) => {
         setRawRSS(rawRSS);
