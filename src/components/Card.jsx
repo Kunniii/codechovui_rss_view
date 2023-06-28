@@ -21,7 +21,7 @@ export default function Card({ postTitle, postUrl, description, pubDate }) {
       </div>
       <div className="text-center mt-3">
         <a
-          href={postUrl}
+          href={"https://codechovui.dev/" + postUrl}
           className="bg-blue-500 text-white font-bold px-7 py-2 rounded-lg hover:bg-blue-600"
           target="_blank"
         >
