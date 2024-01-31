@@ -1,6 +1,6 @@
 export default function Card({ postTitle, postUrl, description, pubDate }) {
   return (
-    <div className="m-2 px-2 py-4 rounded-lg hover:scale-105 duration-200 bg-white hover:bg-red-500 hover:text-white">
+    <div className="m-2 px-2 py-4 rounded-lg hover:scale-105 duration-200 bg-white hover:drop-shadow-lg">
       <div>
         <a
           href={postUrl}
