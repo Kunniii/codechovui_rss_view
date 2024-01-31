@@ -33,13 +33,16 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-slate-900 select-none">
+    <div className="select-none">
       <h1 className="text-center text-white pt-24 font-bold md:text-7xl lg:text-7xl sm:text-6xl">
         RSS Code Cho Vui
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:px-64 md:px-32 sm:px-10 py-20">
-        {posts.map((post) => (
-          <Card {...post} />
+        {posts.map((post, index) => (
+          <Card
+            {...post}
+            key={index}
+          />
         ))}
       </div>
     </div>
